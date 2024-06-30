@@ -27,7 +27,7 @@ const projectData = [
     id: "3",
     imageUrl:
       "https://www.flowgear.net/wp-content/uploads/2019/03/dynamics-365-logo-1.png",
-    category: "next js",
+    category: "",
     name: "Dobbies Gardens",
     description:
       "An e-commerce store for plants and accessories built using dynamics 365 commerce",

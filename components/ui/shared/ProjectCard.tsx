@@ -21,7 +21,6 @@ interface ProjectCardProps {
 }
 const ProjectCard: React.FC<any> = ({ project }) => {
   useEffect(() => {}, []);
-  console.log("PROJECT ", project?.imageUrl);
   return (
     <>
       <Card className="group overflow-hidden relative">
