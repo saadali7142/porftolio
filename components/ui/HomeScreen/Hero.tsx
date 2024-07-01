@@ -89,7 +89,7 @@ const Hero = () => {
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
-              imageStyle="rounded-b-full !h-[92%] !w-[72%] top-[29px] left-[46px]"
+              imageStyle="rounded-b-full !h-[92%] !w-[72%] !top-[29px] !left-[46px]"
               imgSrc="/hero/Saad.png"
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat  relative bg-bottom"
             />
