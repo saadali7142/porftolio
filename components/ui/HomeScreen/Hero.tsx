@@ -20,7 +20,7 @@ const Hero = () => {
   React.useEffect(() => {
     const fetchResumeUrl = async () => {
       const url =
-        "https://wqvnxuaxfsfpxgeddxas.supabase.co/storage/v1/object/public/resume/Saad_Ali_-_Frontend_Dev_-_ATFS.pdf";
+        "https://wqvnxuaxfsfpxgeddxas.supabase.co/storage/v1/object/public/resume/Saad_ALI_ATFS.pdf";
       setResumeUrl(url);
     };
 
