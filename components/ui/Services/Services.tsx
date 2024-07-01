@@ -44,12 +44,14 @@ const Services = () => {
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[140px] h-[80px] bg-background dark:bg-background flex justify-center items-center">
+                  <div className="sm:mb-5 w-[140px] h-[80px] bg-background dark:bg-background flex justify-center items-center">
                     {item.icon}
                   </div>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <CardTitle className="mb-4">{item.title}</CardTitle>
+                  <CardTitle className="mt-5 md:mt-0 mb-4">
+                    {item.title}
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     {item.description}
                   </CardDescription>
