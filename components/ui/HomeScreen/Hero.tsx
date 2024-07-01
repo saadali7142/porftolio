@@ -1,3 +1,4 @@
+"use client";
 import { Download, Send } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -11,8 +12,21 @@ import { Button } from "../button";
 import Badge from "./Badge";
 import DevImg from "./DevImg";
 import Socials from "./Socials";
+import { createClient } from "@supabase/supabase-js";
 
 const Hero = () => {
+  const [resumeUrl, setResumeUrl] = React.useState("");
+
+  React.useEffect(() => {
+    const fetchResumeUrl = async () => {
+      const url =
+        "https://wqvnxuaxfsfpxgeddxas.supabase.co/storage/v1/object/public/resume/Saad_Ali_-_Frontend_Dev_-_ATFS.pdf";
+      setResumeUrl(url);
+    };
+
+    fetchResumeUrl();
+  }, []);
+
   return (
     <section
       id="home"
@@ -30,12 +44,16 @@ const Hero = () => {
               journey, and what i engage in professionally.{" "}
             </p>
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
+              <Link href="mailto:saadali7142@gmail.com">
                 <Button className="gap-x-2">
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
+              <Button
+                onClick={() => window.open(resumeUrl, "_blank")}
+                variant="secondary"
+                className="gap-x-2"
+              >
                 Download CV <Download size={18} />
               </Button>
             </div>
@@ -71,8 +89,8 @@ const Hero = () => {
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
-              imageStyle="rounded-b-full !h-[97%] !w-[90%]"
-              imgSrc="/hero/dev5.png"
+              imageStyle="rounded-b-full !h-[92%] !w-[72%] top-[29px] left-[46px]"
+              imgSrc="/hero/Saad.png"
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat  relative bg-bottom"
             />
           </div>

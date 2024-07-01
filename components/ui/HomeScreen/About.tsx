@@ -48,9 +48,9 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "Emumba",
-        role: "Markup Engineer Internee",
-        year: "2018 - 2019",
+        company: "Systems Limited",
+        role: "Senior Software Engineer",
+        year: "2022 - Present",
       },
       {
         company: "Karigar Web Solutions",
@@ -58,9 +58,9 @@ const qualificationData = [
         year: "2020 - 2022",
       },
       {
-        company: "Systems Limited",
-        role: "Senior Software Engineer",
-        year: "2022 - Present",
+        company: "Emumba",
+        role: "Markup Engineer Internee",
+        year: "2018 - 2019",
       },
     ],
   },
