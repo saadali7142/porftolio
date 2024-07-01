@@ -46,7 +46,7 @@ const projectData = [
   },
   {
     id: "5",
-    imageUrl: "/work/3.png",
+    imageUrl: "/work/4.png",
     category: "",
     name: "K2 Dashboard",
     description:

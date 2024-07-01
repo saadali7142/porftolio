@@ -118,7 +118,7 @@ const About = () => {
                   value="qualification"
                 >
                   {" "}
-                  Qualificaiton{" "}
+                  Qualification{" "}
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   {" "}
